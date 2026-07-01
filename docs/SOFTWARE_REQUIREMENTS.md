@@ -40,18 +40,112 @@ The primary objectives of TestGuru are:
 - To reduce the manual effort involved in conducting technical assessments.
 - To provide a scalable platform that can support future enhancements and additional assessment features.
 
+
 ## 4. User Roles
 
 ### 4.1 Candidate
 
-### 4.2 Organization (Recruiter)
+A Candidate is a user who participates in technical assessments.
+
+Responsibilities:
+- Register using a shared assessment link.
+- Log in to the platform.
+- View assigned assessments.
+- Start and complete assessments.
+- Submit responses before the time expires.
+- View assessment status and results (based on organization settings).
+- Update personal profile.
+
+---
+
+### 4.2 Hiring Organization
+
+A Hiring Organization represents a company, startup, training institute, or educational institution that conducts technical assessments.
+
+Responsibilities:
+- Register the organization.
+- Log in to the organization dashboard.
+- Create and manage assessments.
+- Add, edit, and delete questions.
+- Generate and share assessment links.
+- View candidate submissions.
+- Review assessment results.
+- Manage organization profile.
+
+---
 
 ### 4.3 Administrator
 
+The Administrator manages the overall TestGuru platform.
+
+Responsibilities:
+- Manage organizations.
+- Manage candidates.
+- Monitor assessments.
+- View platform statistics.
+- Handle reported issues.
+- Manage system settings.
+
 ## 5. Functional Requirements
+
+### Authentication
+- Users shall be able to register and log in securely.
+- The system shall support role-based authentication (Administrator, Hiring Organization, Candidate).
+- The system shall allow users to reset their passwords.
+
+### Hiring Organization
+- Register and manage organization profile.
+- Create, edit, publish, and delete assessments.
+- Add, edit, and delete MCQ questions.
+- Set assessment duration and passing criteria.
+- Generate a unique assessment link.
+- View candidate submissions and results.
+
+### Candidate
+- Register using the assessment link.
+- Log in to access assigned assessments.
+- Start and complete assessments.
+- Submit responses before the timer expires.
+- View assessment status.
+- View results (if enabled by the organization).
+
+### Administrator
+- Manage organizations.
+- Manage candidates.
+- Monitor assessments.
+- View platform statistics.
+- Manage reported issues.
+
+### Assessment Management
+- Support multiple assessments.
+- Automatically calculate scores for MCQ questions.
+- Store assessment history.
 
 ## 6. Non-Functional Requirements
 
+- The application shall provide a responsive user interface.
+- User passwords shall be securely encrypted.
+- The system shall support multiple users simultaneously.
+- The platform shall provide role-based access control.
+- The application shall be easy to maintain and extend.
+- The system shall provide reliable performance and availability.
+- The platform shall validate user input to prevent invalid data.
+- The application shall maintain data integrity and consistency.
+
 ## 7. Assumptions
 
+- Users have a stable internet connection.
+- Users access the platform through a modern web browser.
+- Organizations are responsible for creating valid assessments.
+- Candidates use their own devices to take assessments.
+
 ## 8. Future Enhancements
+
+- Coding assessments
+- AI-based proctoring
+- Video monitoring
+- Email notifications
+- Certificates
+- Analytics dashboard
+- Question bank import/export
+- Mobile application
